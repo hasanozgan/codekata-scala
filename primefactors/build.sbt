@@ -1,6 +1,6 @@
-organization := "com.hasanozgan.codekata.fizzbuzz"
+organization := "com.hasanozgan.codekata.primefactors"
 
-name :="fizzbuzz"
+name :="primefactors"
 
 scalaVersion :="2.10.1"
 
