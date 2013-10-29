@@ -1,15 +1,11 @@
 package com.hasanozgan.codekata.fizzbuzz
 
 class FizzBuzzCalculator {
-  def calculate(parameter : Int) : String = parameter match {
-    case number if (isDivisibleBy(number, 15)) => "fizzbuzz"
-    case number if isDivisibleBy(number, 3)  => "fizz"
-    case number if isDivisibleBy(number, 5) => "buzz"    
-    case _ => parameter.toString
-  }
-
-  def isDivisibleBy(number : Int, factor : Int) = {
-    number % factor == 0
-  }
+  def calculate(i : Int) : String = (i % 3, i % 5) match {
+    case (0 , 0) => "fizzbuzz"
+    case (0 , _) => "fizz"
+    case (_ , 0) => "buzz"
+    case _       => i.toString()
+  } 
 }
 
