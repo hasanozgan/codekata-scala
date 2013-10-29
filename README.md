@@ -1,4 +1,4 @@
-codekata-scala
+Code Kata for Scala 
 ==============
 
-Code Kata for Scala
+ - Fizz Buzz
